@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:state_focused="true" android:drawable="@drawable/ic_launcher" android:state_enabled="true"
+        ></item>
+     <item 
+        android:state_focused="false" android:drawable="@drawable/left_arrow_onclick" android:state_enabled="true"
+        ></item>
+
+</selector>

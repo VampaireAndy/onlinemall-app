@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    tools:context=".DetailActivity" >
+
+    <LinearLayout 
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- <Gallery
+        android:id="@+id/detail_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+		</Gallery> -->
+		<ImageView
+        android:id="@+id/detail_iv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:gravity="center">
+	</ImageView>
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/detail_tv1"
+            android:layout_weight="0.8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="zhe shi shang pin miao shu"/>
+        <ImageView 
+            android:id="@+id/detail_iv1"
+            android:layout_weight="0.2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menu_collect_icon_press"/>
+    </LinearLayout>
+    
+    	<TextView 
+    	    android:id="@+id/detail_price"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:textColor="@color/red"
+            android:text="$10000000000000000"/>
+    	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView 
+    	    android:id="@+id/detail_baoyou"
+    	    android:layout_weight="1"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+            android:hint="卖家包邮"/>
+        <TextView 
+    	    android:id="@+id/detail_yuexiao"
+    	    android:layout_weight="1"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+            android:hint="月销  xxxx笔"/>
+        <TextView 
+    	    android:id="@+id/detail_fahuo"
+    	    android:layout_weight="1"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+            android:hint="厦门   发货"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:text="评论："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+    
+    <ListView 
+        android:id="@+id/detail_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <!-- 头部 -->
+
+    <fragment
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.app.TopFragment" >
+
+  	</fragment>
+
+	<FrameLayout 
+	    android:id="@+id/main_fram_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/layout_title">
+	    
+	</FrameLayout>	
+    
+  	<fragment
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:name="com.example.app.BottomFragment" >
+
+        
+  	</fragment>
+    
+</RelativeLayout>
